@@ -1,10 +1,248 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害</h1>
-  </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <style>
+    /* 通用 */
+    h1,h4,h5,h2{
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    p{
+      /* 默認字型 */
+      font-family: 'Open Sans', sans-serif;
+    }
+    .fas{
+      font-size: 16px;
+    }
+    /* 導覽列 */
+    header img{
+      width: 100px;
+      height: 80px;
+    }
+    /* 廣告 */
+    .banner{
+      background-image: url("mainbg.png");
+      height: 350px; 
+      width: 100%;
+    }
+    /* 最新消息 */
+    .news p{
+      line-height: 2; /*行高*/
+      letter-spacing: 1.5px; /*字距*/
+      color: #707070;
+      /* text-align: center; */ 
+    }
+    .news img{
+      border-radius: 50%;/*圓角效果*/
+    }
+    /* 產品 */
+    .product img{
+      /* border-radius: 5%; */
+    }
+      /* 絕對定位(可定位到圖片) */
+    /* .insert{
+      color: cornsilk;
+      position:absolute;
+      top:50%;
+    } */
+    /* 加入電郵 */
+    .joinemail {
+      height: 300px; 
+    }
+    .joinemail input{
+      color:#707070;
+    }
+    /* footer頁尾 */
+    footer {
+      padding-top: 30px;
+      border-top: 3px solid #707070;
+      margin-bottom: 20px;
+    }
+    footer p{
+      color:#707070;
+      font-size: 16px;
+    }
+    footer img{
+      width: 100px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<!-- 導航欄 -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <img src="pengdesign.png" alt="">
+      <!-- 切換為手機時顯示 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ml-2">
+            
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home mr-1"></i>首頁</a>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="#"><i class="fas fa-paper-plane mr-1"></i></i>主要業務</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-product-hunt mr-1"></i>產品內容
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">產品1</a></li>
+              <li><a class="dropdown-item" href="#">產品2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">產品3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-headset mr-1"></i>聯絡我們</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- 廣告形象 -->
+<div class="banner ">
+  <div class="container-fluid px-0 h-100">
+    <div class="row h-100 align-items-center mx-5">
+      <div class="col-12 ">
+          <h1>廣告宣傳形象網頁</h1>
+          <p class="">幫助您的產品提升曝光率!</p>
+          <a class="btn btn-danger rounded-pill px-3" href="http://www.yahoo.com.tw">點選參加</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 最新消息 -->
+<div class="news">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12">
+        <h1 class="text-center mt-4 mb-4">最新消息</h1>
+        <div class="row offset-md-2  "><!--抵銷欄-->
+          <div class="col-md-4 text-right">
+            <img src="mooncake.jpg" class="img-fluid " alt="放假公告">
+          </div>
+          <div class="col-md-5 text-center ml-3">
+            <h4 class="text-left ">2020 年假日連假營業時間公告</h4>
+            <p class="text-left mt-3">中秋三天連假即將來到，想必大家都已經安排好滿滿的行程出門遊玩或著返鄉過節了吧！中秋節可是會有滿滿的食物能享用，月餅、蛋黃酥、烤肉、柚子…. 雖然如此但還是不要吃過量喔 !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 產品 -->
+<div class="product">
+  <div class="container">
+    <!-- 標題 -->
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <h1 class="text-center mt-4 mb-4">產品介紹</h1>
+      </div>
+    </div>
+    <!-- 內容 -->
+    <div class="row ">
+      <div class="col-12 col-md-4 p-5">
+        <div class="card " >
+              <img class="card-img-top" src="https://picsum.photos/200/200?random=1" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-tag mr-1"></i>Product title</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, asperiores? Placeat, amet vel!.</p>
+                <a href="#" class="btn btn-danger rounded-pill p-2">說明</a>
+              </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5">
+        <div class="card" >
+          <img class="card-img-top" src="https://picsum.photos/200/200?random=2" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-tag mr-1"></i>Product title</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, asperiores? Placeat, amet vel!.</p>
+            <a href="#" class="btn btn-danger rounded-pill p-2">說明</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5">
+        <div class="card" >
+          <img class="card-img-top" src="https://picsum.photos/200/200?random=3" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-tag mr-1"></i>Product title</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, asperiores? Placeat, amet vel!.</p>
+            <a href="#" class="btn btn-danger rounded-pill p-2">說明</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 加入email -->
+<div class="joinemail ">
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-12 col-md-12">
+        <h2 class="text-center mt-4 mb-4">加入Design的email !</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center  mt-4 ">
+      <div class="col-12 col-md-6">
+        <p>有最新消息即可立刻通知您! </p>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" value="輸入信箱"  >
+          <a class="btn btn-danger  p-2" href="">提交</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 頁尾 -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 pl-4">
+        <img src="Pengdesign.png" class="img-fluid " >
+        <p>幫助您的產品提升曝光率! Design設計</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <h4 class="mb-2">連結</h4>
+        <div>
+          <ul class="list-group list-group-horizontal ">
+            <li class="list-group-item border-0 pl-0">首頁</li>
+            <li class="list-group-item border-0 pl-0">主要業務</li>
+          </ul>
+          <ul class="list-group list-group-horizontal ">
+            <li class="list-group-item border-0 pl-0">產品</li>
+            <li class="list-group-item border-0 pl-0">關於我們</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <h4>聯絡我們</h4>
+        <p>台灣台中太平區文心路500號</br>
+        Call: (04) 12345678</br>
+        <a href='mailto:123456@gmail.com'>12345@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- 引入bootstrap.bundle (bootstrap.js + popper.min.js)-->
+<script src="bootstrap.bundle.js"></script>
+</body>
+
 </html>
